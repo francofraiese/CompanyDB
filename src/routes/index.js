@@ -5,7 +5,6 @@ import Sectors from './sectors.js';
 // Ejemplo: const authRouter = require('./auth.js');
 
 const router = Router();
-console.log("llegue a la ruta madre")
 
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
