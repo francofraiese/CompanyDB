@@ -26,8 +26,8 @@ const { Sectors, Employees } = sequelize.models;
 
 // Aca vendrian las relaciones
 // Product.hasMany(Reviews);
-Employees.belongsTo(Sectors);
-Sectors.hasMany(Employees)
+Employees.belongsTo(Sectors, {foreignKey:"sectorId", as:"sector"});
+Sectors.hasMany(Employees, {as: "employee"})
 
 export default {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
